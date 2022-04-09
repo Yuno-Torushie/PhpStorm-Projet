@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Super site sécurisé</title>
+    </head>
+    <body>
+        <h1>Le site de confiance en ligne ! </h1>
+        <form id="sign_up" action="sign_up.php" method="post">
+            <label>Se créer un compte !<br>
+                <input id="sign_upUtilisateur" type="text" name="utilisateur" placeholder="Nom Utilisateur" maxlength="30"><br>
+
+                <input id="sign_upMotdepasse" type="password" name="motdepasse" placeholder="Mot De Passe" maxlength="30"><br>
+
+                <input id="confirmemotdepasse" type="password" name="confirmemotdepasse" placeholder="Confirmé le mot de passe" maxlength="30"><br>
+            </label>
+            <input id="sign_upSubmit" type="submit" name="submit" value="Sign up"><br>
+        </form>
+        <br>
+        <form id="login" action="login.php" method="post">
+            <label>Se connecter !<br>
+                <input id="loginUtilisateur" type="text" name="utilisateur" placeholder="Nom Utilisateur" maxlength="30"><br>
+
+                <input id="loginMotdepasse" type="password" name="motdepasse" placeholder="Mot De Passe" maxlength="30"><br>
+            </label>
+            <input id="loginSubmit" type="submit" name="submit" value="Login"><br>
+        </form>
+    </body>
+</html>

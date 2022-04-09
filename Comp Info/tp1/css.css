@@ -1,0 +1,51 @@
+*{
+    background-color: gray;
+}
+
+body {
+    cursor: default;
+    font-style: oblique;
+}
+#acceuil{
+    text-align: center;
+}
+
+a:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a{
+    font-weight: 500;
+    text-decoration:none;
+    font-size: 2vw;
+    color: yellowgreen;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 4px 2px;
+}
+p{
+    border-radius: .75rem;
+    color: black;
+    background: rgba(249,228,183,0.9);
+    border: 10px rgba(191,162,125,0.9) double;
+    width: 50%;
+}
+
+p.acceuil{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2.pied{
+    font-style: normal;
+    font-size: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

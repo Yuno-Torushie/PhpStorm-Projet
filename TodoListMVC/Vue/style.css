@@ -1,0 +1,74 @@
+*{
+    font-family: 'Chilanka', cursive;
+}
+body{
+    background: rgb(228,173,91) url(../../TodoListMVC/Vue/OrangeRepeat.jpg) top center repeat;
+    cursor: default;
+    text-align: center;
+    font-style: oblique;
+}
+
+h1{
+    color: rgb(188,166,155);
+    background: rgba(249,228,183,0.9);
+    border: 10px rgba(191,162,125,0.9) double;
+    font-size: 5vw;
+}
+
+h2{
+    background-image: url(https://media.giphy.com/media/WrHrrwqxCTTb7uKQQX/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 3vw;
+}
+
+
+input{
+    font-size: 2vw;
+    cursor: text;
+    background-color: rgb(249,228,183);
+    border: 5px double rgb(191,162,125);
+    color: rgb(188,166,155);
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;   
+}
+input:hover{
+    background-color: rgb(256,208,163);
+}
+input:focus{
+    color: black;
+    background-color: rgb(249,228,183);
+}
+
+button{
+    font-size: 2vw;
+    cursor: pointer;
+    background-color: rgb(249,228,183);
+    border: 5px double rgb(191,162,125);
+    color: rgb(188,166,155);
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+}
+button:hover{
+    font-size: 2vw;
+    background-color: rgb(256,208,163);
+    text-decoration: underline;
+    
+}
+
+ul{
+    font-size: 3vw;
+    padding-left: 43%;
+    text-align: left;
+}
+
+p:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer;
+}

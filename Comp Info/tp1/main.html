@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Page D'Acceuil</title>
+    <meta name="author" content="Troussier Arthur">
+    <meta name="description" content="Exemple de page HTML">
+    <link rel="stylesheet" href="css.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="https://wiki.21jumpclick.fr/images/0/02/Mano_Logo.jpg" type="image/jpg">
+</head>
+<script>
+    function WhereMouse( evt ){
+
+        evt = !evt ? event : evt
+
+        var Mouse_X = evt.clientX;
+        var Mouse_Y = evt.clientY;
+
+        var scroll_x=document.body.scrollLeft || document.documentElement.scrollLeft;
+        var scroll_y=document.body.scrollTop || document.documentElement.scrollTop;
+
+        Mouse_X += scroll_x;
+        Mouse_Y += scroll_y;
+
+        document.getElementById('imp1').value=Mouse_X
+        document.getElementById('imp2').value=Mouse_Y
+    }
+
+
+    typeof window.addEventListener == 'undefined' ? document.attachEvent("onmousemove",WhereMouse) : document.addEventListener('mousemove',WhereMouse,false);
+</script>
+<body id="acceuil">
+        <h1>Bienvenue dans la page d'acceuil</h1></br>
+        <nav id="menu" onmouseover="changeColor()">
+            <a href="main.html">page d'acceuil</a> | <a href="produit.html">produit</a>| <a href="Contact.html">contact</a>
+        </nav>
+
+    <section id="section1">
+        <p class="acceuil">La mano</p>
+        <img src="https://wiki.21jumpclick.fr/images/0/02/Mano_Logo.jpg" width="300px" id="mydiv">
+    </section>
+
+    <section id="section2">
+        <p class="acceuil">Votre entreprise de vente de partie Humaine</p>
+    </section>
+        <div style='position:fixed'>
+            X <input type =texte id='imp1' onmouseover="alerte()"/>
+            <br>
+            <br>
+            Y <input type =texte id='imp2' onmouseover="alerte()"/>
+        </div>
+    <footer>
+        <h2 class="pied">pied de page statique</h2>
+    </footer>
+</body>
+</html>

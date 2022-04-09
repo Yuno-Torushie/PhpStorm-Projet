@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>To Do List - Arthur</title>
+        <link class="defaut" rel="stylesheet" href="../Vue/style.css">
+        <link class="secret" rel="stylesheet" href="../../To-Do%20List/secretStyle.css">
+        <link rel='icon' href="https://images-eu.ssl-images-amazon.com/images/I/51BEC80AFiL.png">
+        <script src="../Controler/script.js"></script>
+
+    </head>
+    
+    <body>
+        
+        <h1>Tchating</h1>
+        <h2>Tâche à faire</h2>
+    
+        <section id="Formulaire">
+            <label for="text" for="pseudo">
+                <input id="pseudo" type="text" name="Pseudo" placeholder="Pseudo" maxlength="30" class="text">
+                <input id="text" type="text" name="Text" placeholder="Text" maxlength="30" class="text" OnKeyPress="submitOnEnter();">
+                <button type="button" name="Ajouter" onclick="addElementToList()" class="ajouter"> Envoyer </button>
+            </label>
+        </section>
+        
+        <section id="listes">
+                <ul id="ma-liste">
+                <!--ma liste-->
+                </ul>
+       </section>
+        
+    </body>
+    
+</html>

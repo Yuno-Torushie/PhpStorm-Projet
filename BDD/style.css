@@ -1,0 +1,136 @@
+*{
+    font-family: 'Chilanka', cursive;
+}
+body{
+    background: rgb(228,173,91) url(OrangeRepeat.jpg) top center repeat;
+    cursor: default;
+    text-align: center;
+    font-style: oblique;
+}
+
+h1{
+    color: rgb(188,166,155);
+    background: rgba(249,228,183,0.9);
+    border: 10px rgba(191,162,125,0.9) double;
+    font-size: 5vw;
+}
+
+h2{
+    background-image: url(https://media.giphy.com/media/WrHrrwqxCTTb7uKQQX/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 3vw;
+}
+
+h3{
+    font-size: 2vw;
+    cursor: pointer;
+    background-color: rgb(249,228,183);
+    border: 5px double rgb(191,162,125);
+    color: rgb(188,166,155);
+    text-align: center;
+    display: inline-block;
+}
+input{
+    cursor:pointer;
+}
+input{
+    font-size: 2vw;
+    cursor: text;
+    background-color: rgb(249,228,183);
+    border: 5px double rgb(191,162,125);
+    color: rgb(188,166,155);
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;   
+}
+input:hover{
+    background-color: rgb(256,208,163);
+}
+input:focus{
+    color: black;
+    background-color: rgb(249,228,183);
+}
+
+input:submit{
+    cursor: pointer;
+}
+
+input#age{
+    cursor: pointer;
+}
+
+a{
+    font-size: 2vw;
+    cursor: default;
+    background-color: rgb(249,228,183);
+    border: 5px double rgb(191,162,125);
+    color: rgb(188,166,155);
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+}
+
+select{
+    font-size: 2vw;
+    cursor: pointer;
+    background-color: rgb(249,228,183);
+    border: 5px double rgb(191,162,125);
+    color: rgb(188,166,155);
+    text-align: center;
+    display: inline-block;
+}
+
+
+ol{
+    font-size: 3vw;
+    padding-left: 43%;
+    text-align: left;
+}   
+
+li:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+label {
+  position: relative;
+}
+
+label input {
+  font-size: 1em;
+  color: #f9f9f9;
+  background: transparent;
+  padding: 1rem 1.2rem;
+  width: 350px;
+  border-radius: 5px;
+  border: 2px solid #7a7a7a;
+  transition: all 0.2s;
+}
+label input:focus {
+  border-color: #ff4754;
+}
+label .password-icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 20px;
+  color: #f9f9f9;
+  transition: all 0.2s;
+}
+
+label .password-icon:hover {
+  cursor: pointer;
+  color: #ff4754;
+}
+
+label .password-icon .feather-eye-off {
+  display: none;
+}

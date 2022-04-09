@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Demo 17</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="lib/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<h2 class="margin-bottom-10">Exemples d'événements</h2>
+		
+		<div  class="bg-info">
+		<h3>Un événement soumission de formulaire (onsubmit)</h3>
+		<p>Un événement se déclenche quand on soumet le formulaire. L'action associée à cet événement est la récupération des coordonnées géographiques (via le navigateur) et l'affichage de la latitude et la longitude dans des champs textuels.</p>
+		<form action="#">
+			<label for="inputLat">Latitude</label>
+			<input type="text" id="inputLat" readonly>
+			<br>
+			<label for="inputLong">Longitude</label>
+			<input type="text" id="inputLong" readonly>
+			<br>
+			<input type="submit" value="Localisez-moi !" onclick="getLocation();">
+		</form>
+		</div>
+		
+		<div class="bg-success" onmouseover="alert('Vous avez déclenché un événement onmouseover !');">
+			<h3>Un événement survol de souris (onmouseover)</h3>
+			<p>Un événement se déclenche quand le curseur de la souris entre sur le composant &lt;section&gt; (fond vert). L'action associée à cet événement est un message d'alerte.</p>
+		</div>
+		
+		<script>
+			/* des scripts utilisés pour les exemples */
+			function getLocation() {
+				if (navigator.geolocation)
+					navigator.geolocation.getCurrentPosition(showPosition);
+				else alert("Ce navigateur ne prend pas en charge la géolocalisation.");
+			}
+
+			function showPosition(position) {
+				var inputLat = document.getElementById("inputLat");
+				var inputLong = document.getElementById("inputLong");
+				inputLat.value = position.coords.latitude;
+				inputLong.value = position.coords.longitude;
+			}
+		</script>
+	</div>
+	
+    <script src="lib/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+

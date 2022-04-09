@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Demo 10</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="lib/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<h2>Fenêtres modales</h2>
+		<h3>Une petite fenêtre modale avec animation, header, body, footer et un symbole de fermeture</h3>
+		<!-- bouton de lancement de la fenêtre modale -->
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exempleModal1">Cliquez-moi !</button>
+		<!-- déclaration de la fenêtre modale -->
+		<div id="exempleModal1" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Le titre de la modale</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						Contenu de la modale (dans <code>.modal-body</code>)
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+						<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Valider</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<h3>Une grande modale sans animation et avec contenu minimal</h3>
+		<!-- bouton de lancement de la fenêtre modale -->
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exempleModal2">Déclenche ma modale !</button>
+		<!-- déclaration de la fenêtre modale -->
+		<div id="exempleModal2" class="modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						Une fenêtre minimale (pas de titre, pas de pied de page)
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script src="lib/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+

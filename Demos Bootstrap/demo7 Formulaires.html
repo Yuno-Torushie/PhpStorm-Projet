@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Demo 7</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="lib/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<h2>Formulaires</h2>
+		<h3>Un simple formulaire avec deux groupes (chacun contenant un label et un champ texte) :</h3>
+		<form>	
+			<fieldset class="form-group">
+				<label for="input1">Un premier label</label>
+				<input type="text" class="form-control" id="input1" placeholder="un exemple de valeur">
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="input2">Un autre label</label>
+				<input type="text" class="form-control" id="input2" placeholder="une autre exemple">
+			</fieldset>
+		</form>
+		<h3>Un formulaire plus complet qui utilise la grille, avec des composants désactivés et en lecture seule et des cases à cocher en ligne :</h3>
+		<form>
+			<div class="form-group row">
+				<label for="input5" class="col-sm-2 form-control-label">Email</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control" id="input5" placeholder="alice@fai.com">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="input6" class="col-sm-2 form-control-label">Identifiant</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control form-control-lg" id="input6" value="123" readonly>
+				</div>
+				<small class="text-muted col-sm-10 col-sm-offset-2">
+		Cet identifiant a été généré automatiquement.
+		</small>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-2">Options</label>
+				<div class="col-sm-10">
+					<div class="radio">
+						<label>
+							<input type="radio" name="options" id="option1" value="option1" checked> Option 1 (cochée par défaut)
+						</label>
+					</div>
+					<div class="radio disabled">
+						<label>
+							<input type="radio" name="options" id="option2" value="option2" disabled> Option 2 (désactivée)
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-2">Supplément</label>
+				<div class="col-sm-10">
+					<label class="checkbox-inline">
+						<input type="checkbox" value="1"> Option cochable 1
+					</label>
+					<label class="checkbox-inline">
+						<input type="checkbox" value="2"> Option cochable 2
+					</label>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-primary">Enregistrer</button>
+				</div>
+			</div>
+		</form>
+		<h3>Un formulaire qui exploite les couleurs contextuelles :</h3>
+		<form>
+			<div class="form-group">
+				<label class="form-control-label text-success" for="inputSuccess1">Un contrôle valide</label>
+				<input type="text" class="form-control is-valid" id="inputSuccess1">
+			</div>
+			<div class="form-group">
+				<label class="form-control-label text-danger" for="inputDanger1">Un contrôle invalide</label>
+				<input type="text" class="form-control is-invalid" id="inputDanger1">
+				<p></p>
+			</div>
+			
+		</form>
+	</div>
+	
+    <script src="lib/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
